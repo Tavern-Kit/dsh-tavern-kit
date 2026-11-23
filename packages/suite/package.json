@@ -1,0 +1,40 @@
+{
+  "name": "@tavern-kit/suite",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "description": "Tavern Kit \u2014 suite",
+  "engines": {
+    "node": ">=24",
+    "dsh": "0.2.2-rc.3"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "locale/*.json",
+    "docs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@tavern-kit/rp-materials": "workspace:^",
+    "@tavern-kit/rp-chat": "workspace:^",
+    "@tavern-kit/rp-connections": "workspace:^",
+    "@tavern-kit/rp-deepseek-import": "workspace:^",
+    "@tavern-kit/rp-appearance": "workspace:^"
+  }
+}

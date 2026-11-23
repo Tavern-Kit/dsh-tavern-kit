@@ -1,0 +1,11 @@
+Original local artwork for 溪间四时 1.2.0
+Copyright (c) 2026 Tavern Kit contributors
+SPDX-License-Identifier: AGPL-3.0-only
+
+assets/window-lattice.svg and assets/letter-seal.svg are original decorative vector artwork.
+assets/branch-spring.svg, assets/branch-summer.svg, assets/branch-autumn.svg and
+assets/branch-winter.svg are original seasonal botanical artwork added in 1.2.0.
+Their centers remain transparent; they do not replace the controlled 3D garden.
+The complete AGPL-3.0 license is included as LICENSE.txt at this theme's root.
+The original annac777/xi4u scene remains covered by licenses/XI4U-MIT.txt.
+Nunito remains covered by licenses/NUNITO-OFL.txt.

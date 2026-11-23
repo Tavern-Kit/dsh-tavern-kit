@@ -1,0 +1,4 @@
+{"user_name":"阿宁","character_name":"林舟","chat_metadata":{"integrity":"independent-st-mvu-fixture-2026","vendor_header":{"keep":true}}}
+{"is_user":false,"name":"林舟","mes":"你好，阿宁<UpdateVariable>_.add('counter', 100);</UpdateVariable>","swipe_id":0,"swipes":["你好，{{user}}","另一句首句"],"variables":[{"stat_data":{"counter":10,"label":"原首句"},"schema":{"type":"object","properties":{"counter":{"type":"number"}}},"initialized_lorebooks":{"embedded:card":[1]},"display_data":{"counter":"10"},"delta_data":{"counter":"0->10"},"vendor_unknown":{"nested":[1,null,"保留"]}},{"stat_data":{"counter":20}}]}
+{"is_user":true,"name":"阿宁","mes":"接着聊。"}
+{"is_user":false,"name":"林舟","mes":"一样的正文","swipe_id":1,"swipes":["一样的正文","一样的正文","没有变量的候选"],"variables":[{"stat_data":{"counter":11},"vendor_unknown":"第一条"},{"stat_data":{"counter":22},"initialized_lorebooks":{"book":[2]}},null]}

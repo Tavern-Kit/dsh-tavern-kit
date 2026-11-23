@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "接回旧对话",
+    "description": "接回 DeepSeek 或酒馆导出的旧对话，把熟悉的剧情接着聊。",
+    "detail": "docs/DETAIL.md"
+  }
+}

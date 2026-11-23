@@ -1,0 +1,17 @@
+.worktrees/
+references/
+node_modules/
+**/dist/
+**/lib/
+.build/
+coverage/
+.playwright/
+.playwright-cli/
+artifacts/
+*.tgz
+/.local/
+
+# Local development notes
+/docs/
+/AGENTS.md
+/DESIGN.md

@@ -1,0 +1,18 @@
+/**
+ * Build-only identity bridge for the 0.2.2-rc.3 analyzer. That version recognizes
+ * protocol symbols only when their declarations belong to its source workspace
+ * or to the protocol's ambient module. The types below are the actual published
+ * protocol types, not substitute decorators or hand-authored Remote schemas.
+ * Normal type checking and every runtime import continue to resolve the package.
+ */
+declare module '@deepseek-ai/dsh-typert-protocol' {
+  export type * from '@tavern-build/official-typert';
+  export type TypertLookup<Host, Wire> = import('@tavern-build/official-typert').TypertLookup<Host, Wire>;
+  export type TypertContext<Wire> = import('@tavern-build/official-typert').TypertContext<Wire>;
+  export type RemoteStream<Out, In = never> = import('@tavern-build/official-typert').RemoteStream<Out, In>;
+  export interface TypertLookupMap {}
+  export interface TypertContextMap {}
+  export const Remote: typeof import('@tavern-build/official-typert').Remote;
+  export const TypertRemoteService: typeof import('@tavern-build/official-typert').TypertRemoteService;
+  export type TypertRemoteService = import('@tavern-build/official-typert').TypertRemoteService;
+}

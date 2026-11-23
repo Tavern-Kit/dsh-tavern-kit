@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@deepseek-ai/cordis": ["./node_modules/@deepseek-ai/cordis/lib/types/index.d.ts"],
+      "@deepseek-ai/dsh-llm-pi-ai/src/discovery.ts": ["./node_modules/@deepseek-ai/dsh-llm-pi-ai/lib/types/discovery.d.ts"],
+      "@deepseek-ai/dsh-llm-pi-ai/src/catalog.ts": ["./node_modules/@deepseek-ai/dsh-llm-pi-ai/lib/types/catalog.d.ts"],
+      "@tavern-kit/rp-materials": ["packages/rp-materials/src/host.ts"],
+      "@tavern-kit/rp-materials/types": ["packages/rp-materials/src/types.ts"],
+      "@tavern-kit/rp-materials/library": ["packages/rp-materials/src/store.ts"],
+      "@tavern-kit/rp-materials/client": ["packages/rp-materials/src/client.tsx"],
+      "@tavern-kit/rp-materials/client/ui": ["packages/rp-materials/src/MaterialsPanel.tsx"],
+      "@tavern-kit/rp-chat": ["packages/rp-chat/src/host.ts"],
+      "@tavern-kit/rp-chat/client": ["packages/rp-chat/src/client.tsx"],
+      "@tavern-kit/rp-chat/types": ["packages/rp-chat/src/types.ts"],
+      "@tavern-kit/rp-chat/protocol": ["packages/rp-chat/src/protocol.ts"],
+      "@tavern-kit/rp-connections": ["packages/rp-connections/src/host.ts"],
+      "@tavern-kit/rp-connections/types": ["packages/rp-connections/src/types.ts"],
+      "@tavern-kit/rp-connections/routing": ["packages/rp-connections/src/routing.ts"],
+      "@tavern-kit/rp-connections/client": ["packages/rp-connections/src/client.tsx"],
+      "@tavern-kit/rp-connections/client/ui": ["packages/rp-connections/src/ConnectionsPanel.tsx"],
+      "@tavern-kit/rp-deepseek-import": ["packages/rp-deepseek-import/src/host.ts"],
+      "@tavern-kit/rp-deepseek-import/types": ["packages/rp-deepseek-import/src/types.ts"],
+      "@tavern-kit/rp-appearance": ["packages/rp-appearance/src/host.ts"],
+      "@tavern-kit/rp-appearance/client": ["packages/rp-appearance/src/client.tsx"]
+    }
+  },
+  "include": ["packages/**/*.ts", "packages/**/*.tsx", "scripts/**/*.ts", "tests/**/*.ts", "vitest.config.ts"],
+  "exclude": ["references", "node_modules", "**/dist", "**/lib", ".build"]
+}

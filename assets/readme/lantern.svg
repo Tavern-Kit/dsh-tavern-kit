@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="title desc">
+  <title id="title">给故事留一盏灯</title>
+  <desc id="desc">奶白底色上的小提灯，轻轻晃一下后停稳。</desc>
+  <style>
+    .lantern { transform-box: fill-box; transform-origin: 50% 0; animation: settle 1600ms cubic-bezier(0.23, 1, 0.32, 1) 1; }
+    .glow { animation: glow 2000ms cubic-bezier(0.77, 0, 0.175, 1) 2; }
+    @keyframes settle { 0% { transform: rotate(-8deg); } 35% { transform: rotate(5deg); } 70% { transform: rotate(-2deg); } 100% { transform: rotate(0); } }
+    @keyframes glow { 0%, 100% { opacity: .4; } 50% { opacity: .75; } }
+    @keyframes welcome { from { opacity: .65; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .lantern { animation: welcome 200ms ease 1; } .glow { animation: none; } }
+  </style>
+  <circle cx="32" cy="33" r="29" fill="#fffcf2"/>
+  <circle class="glow" cx="32" cy="35" r="23" fill="#f7dda0" opacity=".4"/>
+  <g class="lantern" stroke="#544633" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 19v-4a7 7 0 0 1 14 0v4" fill="none"/>
+    <path d="m24 19-6 6h28l-6-6Z" fill="#b58b52"/>
+    <rect x="21" y="25" width="22" height="25" rx="6" fill="#f4d68d"/>
+    <path d="M32 31c-1 4-5 5-5 9a5 5 0 0 0 10 0c0-3-2-6-5-9Z" fill="#fff9e7" stroke="none"/>
+    <path d="M32 43v3M19 50h26M25 54h14" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "rootDir": "packages",
+    "outDir": ".build/declarations",
+    "composite": false,
+    "incremental": false
+  },
+  "files": ["scripts/client-assets.d.ts"],
+  "include": ["packages/*/src/**/*.ts", "packages/*/src/**/*.tsx"],
+  "exclude": ["references", "node_modules", "**/lib", "**/dist", "**/*.test.ts", "**/*.test.tsx"]
+}

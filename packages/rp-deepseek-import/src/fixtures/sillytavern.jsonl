@@ -1,0 +1,8 @@
+{"user_name":"unused","character_name":"unused","chat_metadata":{"integrity":"independent-st-fixture-2026","main_chat":"earlier-branch","variables":{"gift":"shell"},"vendor_unknown":{"keep":true}}}
+{"name":"林舟","is_user":false,"is_system":false,"send_date":"2026-11-19T08:00:00Z","mes":"你好，阿宁","swipe_id":0,"swipes":["你好，{{user}}","我们又见面了"],"extra":{"reasoning":"当前首句思路","display_text":"不应覆盖原文"},"swipe_info":[{"extra":{"reasoning":"原始首句思路"}},{"extra":{"reasoning":"另一条首句思路"}}]}
+{"name":"阿宁","is_user":true,"send_date":"2026-11-19T08:01:00Z","mes":"先去海边。"}
+{"name":"阿宁","is_user":true,"send_date":"2026-11-19T08:02:00Z","mes":"记得带上那枚贝壳。"}
+{"name":"林舟","is_user":false,"send_date":"2026-11-19T08:03:00Z","mes":"我记着我们的约定。","swipe_id":1,"swipes":["旧回复","我记着我们的约定。",""],"extra":{"reasoning":"当前选中的思路","model":"仅来源，不构造请求"},"swipe_info":[{"extra":{"reasoning":"旧回复思路"}},{"extra":{"reasoning":"旧缓存不应覆盖当前思路"}},{"extra":{"reasoning":"只有思路"}}]}
+{"name":"林舟","is_user":false,"send_date":"2026-11-19T08:04:00Z","mes":"还没说完的半句","extra":{"status":"failed","error":{"message":"原记录中的生成错误"},"reasoning":"失败思路"}}
+{"name":"System","is_user":false,"is_system":true,"send_date":"2026-11-19T08:05:00Z","mes":"不应进入剧情的系统事件","extra":{"type":"system","script":"保留在原始文件"}}
+{"name":"阿宁","is_user":true,"send_date":"2026-11-19T08:06:00Z","mes":"我们走吧。"}

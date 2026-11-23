@@ -1,0 +1,3 @@
+# Preserve unmodified upstream assets and license bytes, including their line endings.
+packages/rp-chat/src/assets/pixelarticons/* -text -whitespace
+packages/rp-appearance/src/assets/fusion-pixel/** -text -whitespace

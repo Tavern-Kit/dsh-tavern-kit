@@ -1,0 +1,3 @@
+- insert:
+    - id: tavern-kit-rp-deepseek-import
+      name: '@tavern-kit/rp-deepseek-import'

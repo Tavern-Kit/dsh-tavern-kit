@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128" shape-rendering="crispEdges">
+  <title>星灯旅店木牌</title>
+  <desc>原创旅店木牌，AGPL-3.0-only，Tavern Kit contributors。</desc>
+  <path fill="#3c3c44" d="M8 8h48v4h4v40h-4v4H8v-4H4V12h4z"/>
+  <path fill="#ad8e62" d="M10 12h44v4h2v32h-2v4H10v-4H8V16h2z"/>
+  <path fill="#655246" d="M12 16h40v32H12z"/>
+  <path fill="#d4b37b" d="M16 16h2v32h-2zm30 0h2v32h-2z" opacity=".4"/>
+  <path fill="#e8ca8e" d="M18 32h4V22h6v-4h8v4h6v10h4v4H18zM22 36h20v10H22z"/>
+  <path fill="#473f41" d="M28 34h8v12h-8zM24 26h4v6h-4zm12 0h4v6h-4z"/>
+  <path fill="#fff0b8" d="M30 20h4v8h-4zm-2 2h8v4h-8z"/>
+  <path fill="#d4b37b" d="M8 6h4v8H8zm44 0h4v8h-4z"/>
+  <path fill="#85705c" d="M10 54h44v4H10z"/>
+</svg>

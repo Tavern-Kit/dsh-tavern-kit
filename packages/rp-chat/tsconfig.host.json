@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.host.json",
+  "compilerOptions": {
+    "rootDir": "../.."
+  },
+  "include": [
+    "src/host.ts",
+    "src/**/*.json",
+    "../*/src/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/client.ts",
+    "src/client.tsx",
+    "src/client/**"
+  ]
+}

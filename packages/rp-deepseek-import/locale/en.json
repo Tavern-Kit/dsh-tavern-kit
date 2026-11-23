@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Import conversations",
+    "description": "Preview and bring back conversations exported from DeepSeek or SillyTavern.",
+    "detail": "docs/DETAIL.md"
+  }
+}

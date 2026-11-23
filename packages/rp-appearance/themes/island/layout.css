@@ -1,0 +1,183 @@
+@font-face{font-family:"Nunito";font-style:normal;font-weight:400;font-display:swap;src:url(assets/nunito-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0100-024F,U+1E00-1EFF,U+2000-206F}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:700;font-display:swap;src:url(assets/nunito-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0100-024F,U+1E00-1EFF,U+2000-206F}
+
+/* A cloth catalogue and one continuous journal page; the garden remains on the home spread. */
+.tk-rp{font-family:var(--tk-font-family);color:var(--tk-text);accent-color:var(--tk-accent)}
+.tk-rp :is(button,input,textarea,select){font-family:var(--tk-font-family)}
+.tk-rp :is(h1,h2){font-family:var(--tk-title-font-family)}
+.tk-rp :is(button,input,textarea,select,summary):focus-visible{outline:2px solid var(--tk-focus);outline-offset:3px}
+.tk-rp .tk-themed-scene{width:100%;height:100%;min-height:0;position:relative;overflow:hidden}
+.tk-rp .tk-themed-scene>img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.tk-rp.tk-chat-layout .tk-conversations{padding-inline:12px;border-right:1px solid color-mix(in srgb,var(--tk-border) 45%,var(--tk-sidebar-bg));background-color:var(--tk-sidebar-bg);background-image:linear-gradient(color-mix(in srgb,var(--tk-sidebar-bg) 78%,transparent),color-mix(in srgb,var(--tk-sidebar-bg) 78%,transparent)),var(--tk-cloth-weave);background-size:auto,72px 72px;box-shadow:inset -1px 0 0 color-mix(in srgb,var(--tk-elevated) 10%,transparent)}
+.tk-rp.tk-chat-layout .tk-sidebar-brand{padding:20px 4px 16px;border-bottom:1px solid color-mix(in srgb,var(--tk-border) 65%,transparent)}
+.tk-rp.tk-chat-layout .tk-sidebar-brand::after{border-radius:50%;width:7px;height:7px;background:var(--tk-ornament);transform:none}
+.tk-rp.tk-chat-layout .tk-sidebar-section{padding:16px 4px 8px}
+.tk-rp.tk-chat-layout .tk-nav-cards{gap:3px}
+.tk-rp.tk-chat-layout .tk-conversation{padding:8px;min-height:64px;border:1px solid transparent;border-radius:11px;background:transparent;box-shadow:none;align-items:flex-start}
+.tk-rp.tk-chat-layout .tk-story-cover{transform:rotate(-2deg);border-radius:3px 6px 6px 3px;box-shadow:inset 3px 0 0 #fff8e515,inset -1px 0 0 #322a1c1a,0 2px 3px #43362120}
+.tk-rp.tk-chat-layout .tk-conversation.tk-selected{border-color:transparent;background:color-mix(in srgb,var(--tk-surface) 78%,var(--tk-sidebar-bg));box-shadow:inset 2px 0 0 color-mix(in srgb,var(--tk-accent) 50%,var(--tk-border)),0 1px 2px color-mix(in srgb,var(--tk-ornament) 8%,transparent)}
+.tk-rp.tk-chat-layout .tk-conversation.tk-selected .tk-conversation-copy>strong{color:var(--tk-text)}
+.tk-rp.tk-chat-layout .tk-sidebar-scene{height:58px;margin-inline:0;background:var(--tk-garden-corner) right bottom / 170px auto no-repeat;mask-image:none;opacity:.9}
+.tk-rp.tk-chat-layout .tk-sidebar-scene>.tk-theme-scene{opacity:0}
+.tk-rp.tk-chat-layout .tk-nav-bottom{border-top:1px solid color-mix(in srgb,var(--tk-border) 65%,transparent);padding-block:9px 14px;gap:5px}
+.tk-rp.tk-chat-layout .tk-nav-bottom button{border:0;border-radius:9px;background:transparent}
+.tk-rp.tk-chat-layout .tk-chat-header{height:76px;padding-inline:22px;background:transparent}
+.tk-rp.tk-chat-layout .tk-chat-title h1{font-size:20px;letter-spacing:.015em}
+.tk-rp.tk-chat-layout .tk-header-actions>.tk-icon-control:where(:not(.tk-micro-control)),.tk-rp.tk-chat-layout .tk-header-actions>.tk-action-menu>summary:where(:not(.tk-micro-control)){border-color:transparent;border-radius:10px;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-update{justify-content:flex-start;margin:0 20px 8px;gap:10px;padding:4px 0;background:transparent;border:0;border-radius:0}
+.tk-rp.tk-chat-layout .tk-workspace{display:flex;flex-direction:column;min-width:0;gap:0;margin:0 20px 0}
+
+.tk-rp.tk-chat-layout.tk-view-chat .tk-chat-main{background-color:var(--tk-surface);background-image:none}
+/* Cream reading paper stays clear; cloth and botanical marks frame its edges. */
+.tk-rp.tk-chat-layout .tk-transcript{position:relative;flex:1;min-width:0;min-height:0;border:0;border-radius:0;background-color:var(--tk-surface);background-image:none;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-transcript::before{inset:0;border:0;border-radius:0;background-image:var(--tk-garden-corner);background-position:right bottom 24px;background-size:160px auto;background-repeat:no-repeat;mask-image:linear-gradient(90deg,#000 0 clamp(8px,calc((100% - var(--tk-reading-width,680px)) / 2 - 24px),96px),transparent clamp(8px,calc((100% - var(--tk-reading-width,680px)) / 2 - 24px),96px) calc(100% - clamp(12px,calc((100% - var(--tk-reading-width,680px)) / 2 - 24px),96px)),#000 calc(100% - clamp(12px,calc((100% - var(--tk-reading-width,680px)) / 2 - 24px),96px)));opacity:.65;pointer-events:none}
+.tk-rp.tk-chat-layout .tk-reading{padding-block:20px 24px;background:none;scrollbar-color:var(--tk-border) transparent}
+.tk-rp.tk-chat-layout .tk-reading-seal{justify-content:flex-start;margin-bottom:14px;opacity:.7}
+.tk-rp.tk-chat-layout .tk-reading-seal>span:not(.tk-tavern-emblem){width:30px;border-top:1px solid currentColor;background:none}
+.tk-rp.tk-chat-layout .tk-message{padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;margin-bottom:25px}
+.tk-rp.tk-chat-layout .tk-message-heading{gap:10px;padding:0;margin-bottom:10px;border:0;background:transparent}
+.tk-rp.tk-chat-layout .tk-message-avatar{border:1px solid color-mix(in srgb,var(--tk-border) 38%,var(--tk-surface));border-radius:8px 10px 7px 9px;background:color-mix(in srgb,var(--tk-surface-soft) 45%,var(--tk-surface));box-shadow:inset 0 0 0 2px var(--tk-surface)}
+.tk-rp.tk-chat-layout .tk-message-byline{gap:3px 8px}
+.tk-rp.tk-chat-layout .tk-message-byline>strong{font-size:15px;font-weight:700;letter-spacing:.015em}
+.tk-rp.tk-chat-layout .tk-message-meta{color:var(--tk-ink-soft)}
+.tk-rp.tk-chat-layout .tk-reply-tools>.tk-action-menu>summary:where(:not(.tk-micro-control)){border-color:transparent;border-radius:9px;background:transparent;color:var(--tk-ink-soft);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-reply-tools>.tk-action-menu[open]>summary:where(:not(.tk-micro-control)){background:color-mix(in srgb,var(--tk-accent-soft) 55%,var(--tk-surface));color:var(--tk-accent)}
+.tk-rp.tk-chat-layout .tk-message-body{margin-left:0;letter-spacing:.015em}
+.tk-rp.tk-chat-layout .tk-message-user .tk-message-body{margin-left:auto}
+.tk-rp.tk-chat-layout .tk-reply-actions{margin-left:0;margin-top:16px;padding-top:8px;border-top:0}
+.tk-rp.tk-chat-layout .tk-reply-decisions .tk-select-reply:where(:not(.tk-micro-control)){border:1px solid transparent;border-radius:9px;background:color-mix(in srgb,var(--tk-accent-soft) 52%,var(--tk-surface));box-shadow:none}
+.tk-rp.tk-chat-layout .tk-select-reply[aria-pressed=true]:where(:not(.tk-micro-control)){border-color:transparent;box-shadow:inset 0 -1px 0 color-mix(in srgb,var(--tk-accent) 40%,transparent)}
+.tk-rp.tk-chat-layout .tk-markdown blockquote{border-left:2px solid var(--tk-ornament);background:color-mix(in srgb,var(--tk-accent-soft) 32%,var(--tk-surface));border-radius:0 5px 5px 0}
+
+/* Candidate controls belong to the active reply; only the draft uses the writing slip. */
+.tk-rp.tk-chat-layout .tk-writing-dock{border-top:1px solid transparent;background-color:var(--tk-surface);background-image:none}
+.tk-rp.tk-chat-layout .tk-reply-header>.tk-candidate-bar{border:0;border-radius:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-candidate-switch{border:0;border-radius:8px;background:transparent}
+.tk-rp.tk-chat-layout .tk-candidate-number input{color:var(--tk-accent);border-radius:3px}
+.tk-rp.tk-chat-layout .tk-favorite-filter:where(:not(.tk-micro-control)){border:1px solid transparent;border-radius:7px}
+.tk-rp.tk-chat-layout .tk-filter-active:where(:not(.tk-micro-control)){border-color:transparent;background:color-mix(in srgb,var(--tk-accent-soft) 55%,var(--tk-surface));color:var(--tk-accent)}
+.tk-rp.tk-chat-layout .tk-roll-button:where(:not(.tk-micro-control)){border-color:transparent;border-radius:9px;background:transparent;color:var(--tk-accent);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-composer{border:1px solid color-mix(in srgb,var(--tk-border) 35%,var(--tk-surface));border-radius:12px;background:color-mix(in srgb,var(--tk-elevated) 60%,var(--tk-surface));box-shadow:inset 0 1px 0 color-mix(in srgb,var(--tk-elevated) 40%,transparent)}
+.tk-rp.tk-chat-layout .tk-composer:focus-within{border-color:var(--tk-accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--tk-focus) 8%,transparent)}
+.tk-rp.tk-chat-layout .tk-composer textarea{border:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-model-picker-trigger{border:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control)){border:1px solid transparent;border-radius:10px;background:var(--tk-accent);box-shadow:inset 0 1px 0 color-mix(in srgb,var(--tk-elevated) 28%,transparent),0 1px 2px color-mix(in srgb,var(--tk-ornament) 12%,transparent)}
+.tk-rp.tk-chat-layout :is(.tk-reply-actions,.tk-candidate-bar) button:where(:not(.tk-micro-control)):not(:disabled):active{transform:none;background:var(--tk-surface-soft);box-shadow:inset 0 1px 1px color-mix(in srgb,var(--tk-border) 40%,transparent)}
+.tk-rp.tk-chat-layout .tk-favorite-filter:where(:not(.tk-micro-control)):focus-within{outline:2px solid var(--tk-focus);outline-offset:2px}
+
+/* Home is a scrapbook spread: its open letter and adjacent task slips differ in size. */
+.tk-rp.tk-chat-layout .tk-home{position:relative;padding:24px 32px 24px}
+.tk-rp.tk-chat-layout .tk-home-top{border-bottom:1px solid var(--tk-border);padding-bottom:10px;margin-bottom:18px}
+.tk-rp.tk-chat-layout .tk-home-heading{align-items:flex-end;margin-bottom:17px}
+.tk-rp.tk-chat-layout .tk-home-heading h1{font-size:26px;letter-spacing:.015em}
+.tk-rp.tk-chat-layout .tk-home-launchpad{grid-template-columns:minmax(0,1.45fr) minmax(240px,.9fr);gap:20px;align-items:start}
+.tk-rp.tk-chat-layout .tk-continue-card{min-height:184px;grid-template-columns:minmax(0,1fr) 48%;padding:16px 8px 16px 24px;border:1px solid var(--tk-page-edge);border-radius:12px 4px 12px 4px;background:var(--tk-surface);box-shadow:2px 2px 0 color-mix(in srgb,var(--tk-border) 42%,transparent)}
+.tk-rp.tk-chat-layout .tk-continue-card::before{content:none}
+.tk-rp.tk-chat-layout .tk-continue-copy>strong{font-size:21px}
+.tk-rp.tk-chat-layout .tk-entry-stack{display:flex;flex-direction:column;gap:12px;padding-top:7px}
+.tk-rp.tk-chat-layout .tk-start-entry{min-height:0;padding:12px 10px 12px 5px;border-width:0 0 1px;border-style:solid;border-radius:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-start-entry::after{content:none}
+.tk-rp.tk-chat-layout .tk-home-recents>header{padding-bottom:7px;border-bottom:1px solid var(--tk-border)}
+.tk-rp.tk-chat-layout .tk-recent-grid{display:block;columns:2;column-gap:20px}
+.tk-rp.tk-chat-layout .tk-recent-card{display:flex;align-items:flex-start;min-height:0;break-inside:avoid;width:100%;margin:0 0 11px;padding:13px 12px 13px 0;border:0;border-bottom:1px solid var(--tk-line-soft);border-radius:0;background:transparent;box-shadow:none;gap:13px}
+.tk-rp.tk-chat-layout .tk-recent-card::before{content:none}
+.tk-rp.tk-chat-layout .tk-recent-card>.tk-story-cover{width:40px;height:54px;align-self:flex-start}
+.tk-rp.tk-chat-layout .tk-character-shortcuts{display:flex;flex-wrap:wrap;gap:8px 16px}
+.tk-rp.tk-chat-layout .tk-character-shortcuts>button{flex:1 1 210px;min-height:0;padding:10px 0;border-width:0 0 1px;border-style:solid;border-radius:0;background:transparent}
+.tk-rp.tk-chat-layout .tk-home-footer{border-width:1px 0 0;border-style:solid;border-radius:0;background:transparent;padding:12px 0}
+
+@media(hover:hover) and (pointer:fine){
+ .tk-rp.tk-chat-layout .tk-header-actions>.tk-icon-control:where(:not(.tk-micro-control)):not(:disabled):hover{background:color-mix(in srgb,var(--tk-accent) 8%,var(--tk-surface))}
+ .tk-rp.tk-chat-layout .tk-header-actions>.tk-action-menu>summary:where(:not(.tk-micro-control)):hover{background:color-mix(in srgb,var(--tk-accent) 8%,var(--tk-surface))}
+ .tk-rp.tk-chat-layout :is(.tk-conversation,.tk-start-entry,.tk-recent-card):not(:disabled):hover{background:color-mix(in srgb,var(--tk-surface) 65%,transparent);border-color:var(--tk-ornament)}
+ .tk-rp.tk-chat-layout :is(.tk-roll-button:where(:not(.tk-micro-control)),.tk-select-reply:where(:not(.tk-micro-control))):not(:disabled):hover{border-color:var(--tk-accent);background:color-mix(in srgb,var(--tk-accent) 10%,var(--tk-surface))}
+}
+@media(min-width:1180px){
+ .tk-rp.tk-chat-layout{grid-template-columns:216px minmax(0,1fr)}
+}
+@media(min-width:761px) and (max-width:1179px){
+ .tk-rp.tk-chat-layout{grid-template-columns:208px minmax(0,1fr)}
+ .tk-rp.tk-chat-layout .tk-home-launchpad{grid-template-columns:1fr}
+ .tk-rp.tk-chat-layout .tk-entry-stack{display:grid;grid-template-columns:1fr 1fr;padding-top:0}
+}
+@media(max-width:760px){
+ .tk-rp.tk-chat-layout .tk-chat-header{height:68px;padding-inline:7px 10px;background:var(--tk-surface)}
+ .tk-rp.tk-chat-layout .tk-chat-title h1{font-size:17px}
+ .tk-rp.tk-chat-layout .tk-update{margin:0 12px 4px;padding-block:2px;gap:8px}
+ .tk-rp.tk-chat-layout .tk-workspace{margin:0;gap:0}
+ .tk-rp.tk-chat-layout .tk-transcript{border:0;border-radius:0;box-shadow:none}
+ .tk-rp.tk-chat-layout .tk-transcript::before{inset:0;background-size:120px auto;background-position:right bottom 20px;mask-image:linear-gradient(90deg,#000 0 8px,transparent 8px calc(100% - 12px),#000 calc(100% - 12px));opacity:.56}
+ .tk-rp.tk-chat-layout .tk-reading{padding-block:16px 24px}
+ .tk-rp.tk-chat-layout .tk-message{margin-bottom:24px}
+ .tk-rp.tk-chat-layout .tk-message-byline>strong{font-size:15px}
+ .tk-rp.tk-chat-layout .tk-composer{border-radius:11px}
+ .tk-rp.tk-chat-layout .tk-home{padding:16px 16px 24px}
+ .tk-rp.tk-chat-layout .tk-home-launchpad{grid-template-columns:1fr;gap:14px}
+ .tk-rp.tk-chat-layout .tk-continue-card{grid-template-columns:minmax(0,1fr) 42%;min-height:160px;padding:12px 8px 12px 16px}
+ .tk-rp.tk-chat-layout .tk-continue-copy>strong{font-size:19px}
+ .tk-rp.tk-chat-layout .tk-entry-stack{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding-top:0;align-items:start}
+ .tk-rp.tk-chat-layout .tk-start-entry{min-height:0;padding:10px 0;gap:5px}
+ .tk-rp.tk-chat-layout .tk-recent-grid{columns:1}
+ .tk-rp.tk-chat-layout .tk-recent-card{padding:12px 0;gap:14px}
+ .tk-rp.tk-chat-layout .tk-character-shortcuts>button{flex-basis:calc(50% - 8px);min-width:0;align-items:flex-start}
+}
+
+/* Journal revisions and drafts use the existing cream paper, never a second card. */
+.tk-rp.tk-chat-layout{--tk-writing-rest-radius:16px;--tk-writing-active-radius:10px;--tk-editor-radius:10px;--tk-writing-rest-bg:color-mix(in srgb,var(--tk-elevated) 24%,var(--tk-surface));--tk-writing-active-bg:color-mix(in srgb,var(--tk-elevated) 66%,var(--tk-surface))}
+.tk-rp.tk-chat-layout .tk-composer{border-radius:var(--tk-writing-rest-radius);background:var(--tk-writing-rest-bg)}
+.tk-rp.tk-chat-layout .tk-composer:is([data-phase=draft],[data-phase=sending],[data-phase=streaming],:focus-within){border-color:color-mix(in srgb,var(--tk-accent) 42%,var(--tk-border));border-radius:var(--tk-writing-active-radius);background:var(--tk-writing-active-bg)}
+.tk-rp.tk-chat-layout .tk-composer:focus-within{border-color:var(--tk-accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--tk-focus) 8%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor{border-color:color-mix(in srgb,var(--tk-border) 52%,var(--tk-surface));border-radius:var(--tk-editor-radius);background:var(--tk-writing-active-bg);color:var(--tk-text);box-shadow:inset 0 1px 0 color-mix(in srgb,var(--tk-elevated) 65%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor textarea{border-color:transparent;border-radius:0;background:transparent;color:var(--tk-text);caret-color:var(--tk-accent);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-inline-editor textarea:focus-visible{outline-color:transparent}
+.tk-rp.tk-chat-layout .tk-inline-editor:focus-within{border-color:var(--tk-focus);box-shadow:0 0 0 1px color-mix(in srgb,var(--tk-focus) 22%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor-heading{color:var(--tk-accent)}
+.tk-rp.tk-chat-layout .tk-inline-editor .tk-primary:where(:not(.tk-micro-control)){border-color:transparent;background:var(--tk-accent-soft);color:var(--tk-accent);box-shadow:inset 0 -1px 0 color-mix(in srgb,var(--tk-accent) 18%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor[data-phase=saving]{border-color:color-mix(in srgb,var(--tk-accent) 32%,var(--tk-border));box-shadow:inset 0 1px 0 color-mix(in srgb,var(--tk-elevated) 65%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor[data-phase=saving] .tk-inline-editor-heading{color:var(--tk-ink-soft)}
+.tk-rp.tk-chat-layout .tk-inline-editor[data-phase=error]{border-color:var(--tk-danger);box-shadow:0 0 0 1px color-mix(in srgb,var(--tk-danger) 18%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor-error{color:var(--tk-danger)}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control))[data-mode=send]{background:var(--tk-accent);color:var(--tk-accent-ink)}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control))[data-mode=stop]{border-color:color-mix(in srgb,var(--tk-accent) 32%,var(--tk-border));background:var(--tk-accent-soft);color:var(--tk-accent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tk-accent) 14%,transparent)}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control))[data-mode=busy]{border-color:var(--tk-line-soft);background:var(--tk-surface-soft);color:var(--tk-ink-soft);box-shadow:inset 0 -1px 0 var(--tk-line-soft)}
+
+/* Warm paper slips keep button materials and nearby state labels in one scale. */
+.tk-rp.tk-chat-layout{--tk-micro-radius:7px;--tk-micro-bg:color-mix(in srgb,var(--tk-surface-soft) 28%,var(--tk-surface));--tk-micro-edge:color-mix(in srgb,var(--tk-ornament) 24%,var(--tk-surface));--tk-micro-selected-bg:color-mix(in srgb,var(--tk-accent-soft) 58%,var(--tk-surface));--tk-micro-selected-ink:var(--tk-accent);--tk-micro-shadow:inset 0 1px 0 color-mix(in srgb,var(--tk-elevated) 68%,transparent),0 1px 0 color-mix(in srgb,var(--tk-ornament) 6%,transparent)}
+
+/* Shared page materials */
+.tk-rp {
+  --tk-page-canvas: var(--tk-canvas);
+  --tk-page-panel: var(--tk-surface);
+  --tk-page-edge: color-mix(in srgb, var(--tk-border) 73%, var(--tk-surface));
+  --tk-page-accent: var(--tk-accent);
+  --tk-page-focus: var(--tk-focus);
+  --tk-page-radius: 9px;
+  --tk-page-inset-shadow: none;
+  --tk-icon-time: 175ms;
+}
+.tk-rp.tk-chat-layout .tk-home-launchpad {
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, .8fr);
+  gap: 20px;
+  align-items: start;
+}
+.tk-rp.tk-chat-layout .tk-home .tk-entry-stack {
+  padding: 0 8px;
+  border-block-end: 1px dashed var(--tk-page-edge);
+}
+.tk-rp.tk-chat-layout .tk-home .tk-home-recents > header { border-bottom-style: dashed; }
+.tk-rp.tk-chat-layout .tk-current-reply .tk-reply-header {
+  padding-block-end: 8px;
+  border-bottom: 1px dashed color-mix(in srgb, var(--tk-page-accent) 27%, transparent);
+}
+@media (max-width: 760px) {
+  .tk-rp.tk-chat-layout .tk-home-launchpad { grid-template-columns: 1fr; gap: 12px; }
+}
+
+/* A stitched rule joins the sheet edges. Illustration stays with the real letter. */
+.tk-rp :is(.mat-heading,.imp-heading,.tk-c-header,.tk-settings-header) {
+  padding-block-end: 12px;
+  border-block-end: 1px dashed var(--tk-page-edge);
+}
+.tk-rp .mat-card::before { border-radius: 1px; }
+.tk-rp .imp-intro { border-radius: 12px 4px 12px 4px; }
+.tk-rp.tk-chat-layout .tk-home .tk-recent-card { align-items: center; }

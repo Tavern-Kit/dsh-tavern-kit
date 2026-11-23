@@ -1,0 +1,142 @@
+@font-face{font-family:"Nunito";font-style:normal;font-weight:400;font-display:swap;src:url(assets/nunito-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0100-024F,U+1E00-1EFF,U+2000-206F}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:700;font-display:swap;src:url(assets/nunito-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0100-024F,U+1E00-1EFF,U+2000-206F}
+
+.tk-rp{font-family:var(--tk-font-family);color:var(--tk-text);accent-color:var(--tk-accent)}
+.tk-rp :is(button,input,textarea,select){font-family:var(--tk-font-family)}
+.tk-rp :is(h1,h2){font-family:var(--tk-title-font-family)}
+.tk-rp :is(button,input,textarea,select,summary):focus-visible{outline:2px solid var(--tk-focus);outline-offset:3px}
+.tk-rp .tk-themed-scene{width:100%;height:100%;min-height:0;position:relative;overflow:hidden;border-radius:3px}
+.tk-rp .tk-themed-scene>img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+
+/* Seasonal ink, diffused courtyard light and one continuous reading surface. */
+.tk-rp.tk-chat-layout{background:var(--tk-canvas)}
+.tk-rp.tk-chat-layout .tk-conversations{background:color-mix(in srgb,var(--tk-sidebar-bg) 62%,var(--tk-canvas));border-right:1px solid color-mix(in srgb,var(--tk-border) 60%,transparent)}
+.tk-rp.tk-chat-layout .tk-sidebar-brand{border-bottom:1px solid var(--tk-line-soft);padding-bottom:16px}
+.tk-rp.tk-chat-layout .tk-sidebar-brand::after{content:none}
+.tk-rp.tk-chat-layout .tk-sidebar-scene{display:none}
+.tk-rp.tk-chat-layout .tk-conversation{border:0;border-radius:9px;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-conversation.tk-selected{background:color-mix(in srgb,var(--tk-surface) 68%,transparent);box-shadow:inset 2px 0 0 var(--tk-accent)}
+.tk-rp.tk-chat-layout .tk-conversation-date{color:var(--tk-ink-soft)}
+.tk-rp.tk-chat-layout .tk-chat-main{background:var(--tk-surface)}
+.tk-rp.tk-chat-layout .tk-chat-header{border-bottom:1px solid color-mix(in srgb,var(--tk-border) 45%,transparent);background:color-mix(in srgb,var(--tk-surface) 92%,var(--tk-canvas))}
+.tk-rp.tk-chat-layout .tk-chat-title h1{font-family:var(--tk-title-font-family);font-size:21px;letter-spacing:.025em;color:var(--tk-text)}
+.tk-rp.tk-chat-layout .tk-header-actions>.tk-icon-control{border:0;border-radius:50%;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-workspace{background:var(--tk-surface)}
+.tk-rp.tk-chat-layout .tk-workspace>.tk-transcript{border:0;border-radius:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-transcript::before{content:none}
+.tk-rp.tk-chat-layout .tk-reading{background:transparent;scrollbar-color:var(--tk-border) transparent}
+.tk-rp.tk-chat-layout .tk-reply-header{border:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-message-heading{border:0}
+.tk-rp.tk-chat-layout .tk-message-avatar{border:1px solid color-mix(in srgb,var(--tk-border) 70%,transparent);border-radius:50% 50% 40% 40%;background:color-mix(in srgb,var(--tk-surface-soft) 80%,transparent);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-message-byline>strong{font-size:16px;font-weight:700;letter-spacing:.03em}
+.tk-rp.tk-chat-layout .tk-message-meta{color:var(--tk-ink-soft);font-size:12px}
+.tk-rp.tk-chat-layout .tk-origin-label{border:0;background:transparent;color:var(--tk-ink-soft)}
+.tk-rp.tk-chat-layout .tk-message-user .tk-message-body{background:color-mix(in srgb,var(--tk-user-bg) 40%,var(--tk-surface));border:1px solid color-mix(in srgb,var(--tk-border) 35%,transparent);border-radius:16px 16px 4px 16px;box-shadow:none}
+/* Geometry belongs to the common reply header, reading column and draft. */
+.tk-rp.tk-chat-layout .tk-candidate-bar{border:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-candidate-switch{border:0;border-radius:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-candidate-number input{background:transparent;box-shadow:none;color:var(--tk-accent);font-variant-numeric:tabular-nums}
+.tk-rp.tk-chat-layout .tk-candidate-switch .tk-icon-control{background:transparent;border-radius:50%}
+.tk-rp.tk-chat-layout .tk-roll-button{border:0;border-radius:8px;color:var(--tk-accent);background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-select-reply{border-radius:8px;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-writing-dock{border:0;background:color-mix(in srgb,var(--tk-surface) 94%,transparent);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-composer{border:1px solid color-mix(in srgb,var(--tk-border) 55%,transparent);border-radius:12px;background:color-mix(in srgb,var(--tk-surface) 94%,transparent);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-composer:focus-within{border-color:color-mix(in srgb,var(--tk-accent) 60%,var(--tk-border));box-shadow:none}
+.tk-rp.tk-chat-layout .tk-composer textarea{background:transparent;border:0;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-model-picker-trigger{border:0;background:transparent;box-shadow:none}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control)){border:0;border-radius:11px;background:var(--tk-accent);color:var(--tk-accent-ink);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-reply-actions{border:0}
+.tk-rp.tk-chat-layout .tk-markdown blockquote{border-left:2px solid color-mix(in srgb,var(--tk-border) 70%,var(--tk-accent));background:color-mix(in srgb,var(--tk-surface-soft) 35%,transparent);border-radius:0 8px 8px 0}
+/* A horizontally even quiet band follows the player's reading width. */
+.tk-rp.tk-chat-layout .tk-presentation{isolation:auto;border:0;border-radius:0;box-shadow:none;background:transparent}
+.tk-rp.tk-chat-layout .tk-presentation::after{content:none}
+.tk-rp.tk-chat-layout .tk-presentation>header{top:9px;right:20px;box-shadow:0 2px 10px color-mix(in srgb,var(--tk-garden-bg) 6%,transparent)}
+.tk-rp.tk-chat-layout .tk-presentation-view{--tk-courtyard-quiet-half:min(calc(var(--tk-reading-width,680px) / 2 + 24px),calc(50% - 12px));--tk-courtyard-quiet-start:calc(50% - var(--tk-courtyard-quiet-half));--tk-courtyard-quiet-end:calc(50% + var(--tk-courtyard-quiet-half));margin:0;border:0;border-radius:0;background:var(--tk-garden-bg);box-shadow:none;opacity:.62;filter:blur(2px) saturate(.78);-webkit-mask-image:linear-gradient(90deg,#000a 0,#0005 var(--tk-courtyard-quiet-start),#0005 var(--tk-courtyard-quiet-end),#000a 100%);mask-image:linear-gradient(90deg,#000a 0,#0005 var(--tk-courtyard-quiet-start),#0005 var(--tk-courtyard-quiet-end),#000a 100%);transition:opacity 180ms ease-out,filter 180ms ease-out}
+.tk-rp.tk-chat-layout .tk-presentation-view::after{content:none}
+.tk-rp.tk-chat-layout .tk-presentation-large .tk-presentation-view{opacity:1;filter:none;-webkit-mask-image:none;mask-image:none}
+.tk-rp.tk-chat-layout .tk-presentation-large{background:var(--tk-garden-bg)}
+.tk-rp.tk-chat-layout .tk-presentation-large>header{background:color-mix(in srgb,var(--tk-surface) 92%,transparent)}
+.tk-rp.tk-chat-layout .tk-presentation-view .tk-xi4u-notice{pointer-events:auto}
+.tk-rp.tk-chat-layout .tk-rp-dialog{border:1px solid var(--tk-border);border-radius:16px;background:var(--tk-elevated);box-shadow:var(--tk-shadow-md)}
+.tk-rp.tk-chat-layout .tk-dialog-header{border:0;background:var(--tk-surface)}
+.tk-rp.tk-chat-layout .tk-dialog-header::after{content:none}
+.tk-rp.tk-chat-layout .tk-home-scene{border:0;border-radius:0;background:transparent}
+.tk-rp.tk-chat-layout .tk-home-scene :is(.tk-xi4u-scene,.tk-xi4u-stage){background:transparent}
+.tk-rp.tk-chat-layout .tk-continue-card{border:1px solid var(--tk-page-edge);border-radius:8px;background:var(--tk-surface);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-continue-card::before{content:none}
+@media(min-width:1180px){.tk-rp.tk-chat-layout{grid-template-columns:208px minmax(0,1fr)}}
+@media(hover:hover) and (pointer:fine){.tk-rp.tk-chat-layout :is(.tk-roll-button,.tk-model-picker-trigger,.tk-presentation-actions button):where(:not(.tk-micro-control)):not(:disabled):hover{background:var(--tk-surface-soft)}}
+@media(max-width:760px){
+ .tk-rp.tk-chat-layout .tk-chat-title h1{font-size:17px}
+ .tk-rp.tk-chat-layout .tk-presentation>header{top:6px;right:12px}
+ .tk-rp.tk-chat-layout .tk-presentation-view{opacity:.7;filter:blur(2.2px) saturate(.8);-webkit-mask-image:linear-gradient(90deg,#000b 0,#0004 12%,#0004 88%,#000b 100%);mask-image:linear-gradient(90deg,#000b 0,#0004 12%,#0004 88%,#000b 100%)}
+ .tk-rp.tk-chat-layout .tk-presentation-large .tk-presentation-view{opacity:1;filter:none;-webkit-mask-image:none;mask-image:none}
+}
+@media(prefers-reduced-motion:reduce){.tk-rp.tk-chat-layout .tk-presentation-view{transition:none}}
+
+/* Quiet seasonal ink follows the existing edit and draft surface. */
+.tk-rp.tk-chat-layout{--tk-writing-rest-radius:12px;--tk-writing-active-radius:8px;--tk-editor-radius:8px;--tk-writing-rest-bg:color-mix(in srgb,var(--tk-surface) 94%,var(--tk-surface-soft));--tk-writing-active-bg:color-mix(in srgb,var(--tk-elevated) 50%,var(--tk-surface))}
+.tk-rp.tk-chat-layout .tk-composer{border-radius:var(--tk-writing-rest-radius);background:var(--tk-writing-rest-bg)}
+.tk-rp.tk-chat-layout .tk-composer:is([data-phase=draft],[data-phase=sending],[data-phase=streaming],:focus-within){border-color:color-mix(in srgb,var(--tk-accent) 48%,var(--tk-border));border-radius:var(--tk-writing-active-radius);background:var(--tk-writing-active-bg)}
+.tk-rp.tk-chat-layout .tk-composer:focus-within{border-color:var(--tk-focus);box-shadow:0 0 0 1px color-mix(in srgb,var(--tk-focus) 18%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor{border-color:color-mix(in srgb,var(--tk-border) 50%,var(--tk-surface));border-radius:var(--tk-editor-radius);background:var(--tk-writing-active-bg);color:var(--tk-text);box-shadow:inset 0 -1px 0 color-mix(in srgb,var(--tk-accent) 14%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor textarea{border-color:transparent;border-radius:0;background:transparent;color:var(--tk-text);caret-color:var(--tk-accent);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-inline-editor textarea:focus-visible{outline-color:transparent}
+.tk-rp.tk-chat-layout .tk-inline-editor:focus-within{border-color:var(--tk-focus);box-shadow:0 0 0 1px color-mix(in srgb,var(--tk-focus) 18%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor-heading{color:var(--tk-accent)}
+.tk-rp.tk-chat-layout .tk-inline-editor .tk-primary:where(:not(.tk-micro-control)){border-color:transparent;background:var(--tk-accent-soft);color:var(--tk-accent);box-shadow:none}
+.tk-rp.tk-chat-layout .tk-inline-editor[data-phase=saving]{border-color:color-mix(in srgb,var(--tk-accent) 32%,var(--tk-border));box-shadow:inset 0 -1px 0 color-mix(in srgb,var(--tk-accent) 20%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor[data-phase=saving] .tk-inline-editor-heading{color:var(--tk-ink-soft)}
+.tk-rp.tk-chat-layout .tk-inline-editor[data-phase=error]{border-color:var(--tk-danger);box-shadow:0 0 0 1px color-mix(in srgb,var(--tk-danger) 18%,transparent)}
+.tk-rp.tk-chat-layout .tk-inline-editor-error{color:var(--tk-danger)}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control))[data-mode=send]{background:var(--tk-accent);color:var(--tk-accent-ink)}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control))[data-mode=stop]{border-color:color-mix(in srgb,var(--tk-accent) 30%,var(--tk-border));background:var(--tk-accent-soft);color:var(--tk-accent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tk-accent) 16%,transparent)}
+.tk-rp.tk-chat-layout .tk-send-button:where(:not(.tk-micro-control))[data-mode=busy]{border-color:var(--tk-line-soft);background:var(--tk-surface-soft);color:var(--tk-ink-soft);box-shadow:inset 0 -1px 0 var(--tk-line-soft)}
+
+/* Ink seals and action slips share a small visible material, not the entire touch area. */
+.tk-rp.tk-chat-layout{--tk-micro-radius:6px;--tk-micro-bg:color-mix(in srgb,var(--tk-surface-soft) 24%,transparent);--tk-micro-edge:color-mix(in srgb,var(--tk-accent) 15%,transparent);--tk-micro-selected-bg:color-mix(in srgb,var(--tk-accent-soft) 70%,var(--tk-surface));--tk-micro-selected-ink:var(--tk-accent);--tk-micro-shadow:inset 0 -1px 0 color-mix(in srgb,var(--tk-accent) 8%,transparent)}
+.tk-rp.tk-chat-layout .tk-chat-header{position:relative}
+.tk-rp.tk-chat-layout .tk-chat-header::after{content:"";position:absolute;pointer-events:none;right:170px;bottom:0;width:76px;height:38px;background:var(--tk-season-branch-image) right center/contain no-repeat;opacity:.3}
+.tk-rp.tk-chat-layout .tk-presentation>header{padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;top:4px;right:12px}
+.tk-rp.tk-chat-layout .tk-presentation-actions{gap:0}
+.tk-rp.tk-chat-layout .tk-presentation-actions button{padding:0 8px;font-size:12px}
+.tk-rp.tk-chat-layout .tk-presentation-actions button::before{background:color-mix(in srgb,var(--tk-surface) 90%,transparent);border-color:var(--tk-micro-edge)}
+.tk-rp.tk-chat-layout .tk-writing-dock{position:relative}
+.tk-rp.tk-chat-layout .tk-writing-dock::before{content:"";position:absolute;right:max(8px,calc((100% - var(--tk-reading-width,680px)) / 2 - 56px));bottom:20px;width:42px;height:42px;background:var(--tk-letter-seal-image) center/contain no-repeat;opacity:.18;pointer-events:none}
+@media(max-width:760px){.tk-rp.tk-chat-layout .tk-chat-header::after{right:160px;width:50px;height:27px;opacity:.2}.tk-rp.tk-chat-layout .tk-writing-dock::before{right:3px;bottom:4px;width:28px;height:28px;opacity:.12}}
+
+/* Shared page materials */
+.tk-rp {
+  --tk-page-canvas: var(--tk-canvas);
+  --tk-page-panel: var(--tk-surface);
+  --tk-page-edge: color-mix(in srgb, var(--tk-border) 56%, var(--tk-surface));
+  --tk-page-accent: var(--tk-accent);
+  --tk-page-focus: var(--tk-focus);
+  --tk-page-radius: 6px;
+  --tk-page-inset-shadow: none;
+  --tk-icon-time: 170ms;
+}
+.tk-rp.tk-chat-layout .tk-home-launchpad { grid-template-columns: 1fr; gap: 12px; }
+.tk-rp.tk-chat-layout .tk-home .tk-entry-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  border-block-end: 1px solid var(--tk-page-edge);
+}
+.tk-rp.tk-chat-layout .tk-home .tk-recent-grid { gap: 0 20px; }
+.tk-rp.tk-chat-layout .tk-current-reply .tk-reply-header { padding-block-end: 4px; }
+@media (max-width: 560px) {
+  .tk-rp.tk-chat-layout .tk-home .tk-entry-stack { grid-template-columns: 1fr; }
+}
+
+/* A season appears with the courtyard and on the edge of the reading header. */
+.tk-rp.tk-chat-layout .tk-home .tk-continue-card { grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); min-height: 208px; padding: 16px 20px; gap: 12px; }
+.tk-rp.tk-chat-layout .tk-home .tk-recent-card { align-items: center; border-block-end: 1px solid var(--tk-page-edge); }
+.tk-rp :is(.mat-heading,.imp-heading,.tk-c-header,.tk-settings-header) {
+  padding-block-end: 12px;
+  border-block-end: 1px solid var(--tk-page-edge);
+}
+.tk-rp .tk-settings-header .tk-settings-mark { border-color: transparent; background: transparent; }
+@media (max-width: 760px) {
+  .tk-rp.tk-chat-layout .tk-home .tk-continue-card { min-height: 160px; padding: 12px; gap: 8px; }
+}

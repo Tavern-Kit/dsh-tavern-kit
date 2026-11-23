@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 16" width="320" height="32" shape-rendering="crispEdges">
+  <title>旅店命令框角饰</title>
+  <desc>原创二像素格阶梯和星灯图案。Tavern Kit contributors，AGPL-3.0-only。</desc>
+  <g fill="#bda279"><path d="M0 0h28v2H2v12H0zm158 2h-26V0h28v14h-2zM10 6h14v2H12v6h-2zm138 2h-12V6h14v8h-2zM30 7h42v2H30zm58 0h42v2H88zM78 2h4v4h4v4h-4v4h-4v-4h-4V6h4z"/></g>
+  <g fill="#79ab9a"><path d="M42 3h2v2h-2zm12 8h2v2h-2zm62-8h2v2h-2zm-12 8h2v2h-2z"/></g>
+</svg>

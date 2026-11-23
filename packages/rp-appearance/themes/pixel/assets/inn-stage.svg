@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 192" width="768" height="384" shape-rendering="crispEdges">
+  <title>星灯下，旅店还亮着</title>
+  <desc>原创16位整数网格像素画：屋瓦、门廊、灯光、告示与旅行道具。Tavern Kit contributors，AGPL-3.0-only。</desc>
+  <path fill="#142239" d="M0 0h384v192H0z"/>
+  <path fill="#263c50" d="M0 84h16V72h16V60h16v12h16V56h16V44h16v12h16v16h16V60h16v16h16V56h16V44h16v16h16v12h16V56h16V36h16v16h16v20h16V56h16v20h16V60h16V48h16v24h16V60h16v24h16v20H0z"/>
+  <path fill="#34515b" d="M0 112h24V96h20v12h20V92h24v16h24v-8h20v16h28V96h28v12h24v-8h28v12h24V88h20v20h24V96h24v16h20v-8h24v24H0z"/>
+  <path fill="#f1dfac" d="M28 28h2v6h-2zm-2 2h6v2h-6zm40-16h2v2h-2zm54 4h2v4h-2zm162 6h2v6h-2zm-2 2h6v2h-6zm62 14h2v4h-2zm-40 18h2v2h-2zm-100-44h2v4h-2z"/>
+  <path fill="#d7dac1" d="M330 12h12v2h4v4h2v12h-2v4h-4v2h-12v-2h-4v-4h-2V18h2v-4h4z"/>
+  <path fill="#142239" d="M338 10h6v4h4v6h2v8h-2v4h-8v-2h-4v-4h-2V16h2v-4h2z"/>
+  <path fill="#1b303d" d="M0 136h384v56H0z"/>
+  <path fill="#3e5e5b" d="M0 132h384v8H0zM0 180h384v12H0z"/>
+  <path fill="#68806b" d="M0 132h384v2H0zM0 180h384v2H0z"/>
+  <path fill="#485a57" d="M8 148h28v4H8zm40 14h24v4H48zm-24 12h20v4H24zm288-28h24v4h-24zm30 18h30v4h-30zm-72 10h22v4h-22z"/>
+  <path fill="#70564b" d="M84 60h192v88H84z"/>
+  <path fill="#b59a72" d="M90 62h180v80H90z"/>
+  <path fill="#d8bd8b" d="M96 68h66v66H96zM214 68h50v66h-50z"/>
+  <path fill="#8d7154" d="M92 84h68v4H92zm0 20h68v4H92zm122-20h52v4h-52zm0 20h52v4h-52z"/>
+  <path fill="#4e4142" d="M78 60h10v84H78zm188 0h10v84h-10zm-104 0h8v84h-8zm44 0h8v84h-8zM84 134h188v10H84z"/>
+  <path fill="#2e3849" d="M62 60h228v-6h-10v-6h-10v-6h-10v-6h-12v-6H104v6H92v6H82v6H72v6H62z"/>
+  <path fill="#4f5160" d="M64 56h224v4H64zM76 48h200v4H76zM88 40h176v4H88zM102 32h148v4H102z"/>
+  <path fill="#777062" d="M104 30h144v2H104zM64 60h224v4H64z"/>
+  <path fill="#373e50" d="M106 34h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zM94 42h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4zm24 0h4v6h-4z"/>
+  <path fill="#142239" d="M102 74h48v46h-48zM222 74h32v46h-32zM174 70h28v68h-28z"/>
+  <path fill="#a66d4c" d="M106 78h40v38h-40zM226 78h24v38h-24zM178 74h20v60h-20z"/>
+  <path fill="#edc580" d="M108 80h36v34h-36zM228 80h20v34h-20zM180 78h16v34h-16z"/>
+  <path fill="#fff0b4" d="M110 82h10v14h-10zM230 82h6v14h-6zM182 80h6v14h-6z"/>
+  <path fill="#735242" d="M124 76h4v42h-4zm-20 20h44v4h-44zm132-20h4v42h-4zm-12 20h28v4h-28zm-38-22h4v40h-4zm-8 24h20v4h-20z"/>
+  <path fill="#6c8b72" d="M102 122h48v6h-48zM222 122h32v6h-32z"/>
+  <path fill="#9fbd85" d="M106 120h4v4h-4zm8 0h6v4h-6zm14 0h8v4h-8zm12 0h6v4h-6zm86 0h8v4h-8zm14 0h8v4h-8z"/>
+  <path fill="#252f3b" d="M76 144h208v8H76z"/>
+  <path fill="#8e765c" d="M168 138h40v6h-40zm-8 6h56v6h-56zm-8 6h72v6h-72z"/>
+  <path fill="#c6ad7f" d="M170 138h36v2h-36zm-8 6h52v2h-52zm-8 6h68v2h-68z"/>
+  <path fill="#9a754e" d="M64 84h6v58h-6zM54 82h26v4H54z"/>
+  <path fill="#4e4142" d="M52 88h30v38H52z"/>
+  <path fill="#c5ac79" d="M56 92h22v30H56z"/>
+  <path fill="#f3dfb1" d="M58 94h18v24H58z"/>
+  <path fill="#a88b60" d="M60 98h14v2H60zm0 6h10v2H60zm0 6h12v2H60z"/>
+  <path fill="#9e7855" d="M298 76h6v68h-6zM288 74h26v4h-26zM286 58h30v4h-30z"/>
+  <path fill="#584643" d="M290 62h22v16h-22z"/>
+  <path fill="#edbc75" d="M292 62h18v12h-18z"/>
+  <path fill="#fff0b4" d="M294 64h6v8h-6z"/>
+  <path fill="#b59565" d="M296 52h10v6h-10zM292 78h18v2h-18z"/>
+  <path fill="#654f45" d="M290 154h60v6h-60zm6-12h48v12h-48z"/>
+  <path fill="#b59b70" d="M294 140h54v4h-54z"/>
+  <path fill="#739a8d" d="M302 122h6v6h4v12h-14v-12h4z"/>
+  <path fill="#a6d0be" d="M302 130h8v6h-8z"/>
+  <path fill="#bb9a69" d="M302 118h6v4h-6z"/>
+  <path fill="#a482a1" d="M322 126h4v4h4v10h-12v-10h4z"/>
+  <path fill="#dfb4b6" d="M320 134h8v4h-8z"/>
+  <path fill="#bb9a69" d="M320 122h8v4h-8z"/>
+  <path fill="#cfba85" d="M330 138h10v2h-10zM334 128h4v10h-4z"/>
+  <path fill="#4d735e" d="M26 116h6v-12h6v12h10v8H26zm10-18h6v10h-6zm-12 12h6v10h-6z"/>
+  <path fill="#a07859" d="M22 124h28v6H22zm4 6h20v14H26z"/>
+  <path fill="#d2a477" d="M28 132h4v10h-4z"/>
+  <path fill="#cfba85" d="M96 160h36v4H96z"/>
+  <path fill="#eee0b7" d="M100 154h12v6h-12zm14 0h14v6h-14z"/>
+  <path fill="#8f6b52" d="M112 152h2v12h-2z"/>
+  <path fill="#b69568" d="M184 168h22v4h-22zm-26 6h18v4h-18zm56 2h18v4h-18z"/>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "./packages/rp-materials/tsconfig.client.json" },
+    { "path": "./packages/rp-connections/tsconfig.client.json" },
+    { "path": "./packages/rp-chat/tsconfig.client.json" },
+    { "path": "./packages/rp-deepseek-import/tsconfig.client.json" },
+    { "path": "./packages/rp-appearance/tsconfig.client.json" }
+  ]
+}

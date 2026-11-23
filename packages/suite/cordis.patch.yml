@@ -1,0 +1,15 @@
+- insert:
+    - id: tavern-kit-rp-materials
+      name: '@tavern-kit/rp-materials'
+- insert:
+    - id: tavern-kit-rp-chat
+      name: '@tavern-kit/rp-chat'
+- insert:
+    - id: tavern-kit-rp-connections
+      name: '@tavern-kit/rp-connections'
+- insert:
+    - id: tavern-kit-rp-deepseek-import
+      name: '@tavern-kit/rp-deepseek-import'
+- insert:
+    - id: tavern-kit-rp-appearance
+      name: '@tavern-kit/rp-appearance'

@@ -1,0 +1,9 @@
+Original local artwork for 像素旅店 1.2.0
+Copyright (c) 2026 Tavern Kit contributors
+SPDX-License-Identifier: AGPL-3.0-only
+
+assets/inn-stage.svg, assets/inn-sign.svg, assets/timber.svg and assets/command-trim.svg
+are original vector pixel artwork. The 1.2.0 inn-stage redraw uses integer-grid geometry;
+the sign and timber artwork were added in the same release. All have no external resources or scripts.
+The complete AGPL-3.0 license is included as LICENSE.txt at this theme's root.
+Existing font sources and their OFL / MIT notices remain in licenses/fusion-pixel/.

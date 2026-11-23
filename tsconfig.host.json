@@ -1,0 +1,16 @@
+{
+  "extends": ["./tsconfig.json", "./.build/typert-host.json"],
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "noEmit": true
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    { "path": "./packages/rp-materials/tsconfig.host.json" },
+    { "path": "./packages/rp-connections/tsconfig.host.json" },
+    { "path": "./packages/rp-chat/tsconfig.host.json" },
+    { "path": "./packages/rp-deepseek-import/tsconfig.host.json" },
+    { "path": "./packages/rp-appearance/tsconfig.host.json" }
+  ]
+}

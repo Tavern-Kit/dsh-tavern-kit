@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="800" height="480" preserveAspectRatio="none">
+  <title>临窗木格与光</title>
+  <desc>原创有厚度的回廊木窗，中央透明，供同一个3D庭院展示。Tavern Kit contributors，AGPL-3.0-only。</desc>
+  <path fill="#302d2b" opacity=".28" d="M0 0h400v8H8v232H0zm392 8h8v232H8v-8h384z"/>
+  <path fill="#6f6658" d="M3 3h394v5H8v229H3zM392 8h5v229H8v-5h384z"/>
+  <path fill="#c6b28e" d="M8 8h384v2H10v222H8zM390 10h2v222H10v-2h380z" opacity=".8"/>
+  <g fill="none" stroke="#9f9175" stroke-width="2" stroke-linecap="square">
+    <path d="M12 49V12h58m260 0h58v37m0 142v37h-58m-260 0H12v-37"/>
+    <path d="M12 30h18V12m340 0v18h18m0 180h-18v18M30 228v-18H12"/>
+    <path d="M20 20h10v10H20Zm350 0h10v10h-10ZM20 210h10v10H20Zm350 0h10v10h-10Z"/>
+  </g>
+  <path fill="#c6b28e" opacity=".45" d="M86 12h72v1H86zm156 0h72v1h-72zM86 227h72v1H86zm156 0h72v1h-72z"/>
+  <path fill="none" stroke="#9f9175" stroke-width="1" d="m180 12 20-4 20 4-20 4Zm0 216 20-4 20 4-20 4Z"/>
+</svg>
